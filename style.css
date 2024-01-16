@@ -11,3 +11,16 @@ body {
 a.genres-dropdown {
     border: solid 2px black;
 }
+
+img.thumbnail {
+    width: 315px;
+}
+
+div.movies-row > div.row > * {
+    padding: 0px; 
+}
+
+footer i {
+    font-size: x-large;
+    margin-right: 10px;
+}
