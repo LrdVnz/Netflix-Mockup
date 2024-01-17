@@ -24,3 +24,9 @@ footer i {
     font-size: x-large;
     margin-right: 10px;
 }
+
+@media screen and (max-width:768px) {
+    #sub-nav {
+        display: none;
+    }
+}
