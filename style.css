@@ -25,6 +25,10 @@ footer i {
     margin-right: 10px;
 }
 
+#netflix-logo {
+    text-align: left;
+}
+
 @media screen and (max-width:768px) {
     #sub-nav {
         display: none;
