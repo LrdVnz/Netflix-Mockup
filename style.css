@@ -9,7 +9,8 @@ body {
 }
 
 a.genres-dropdown {
-    border: solid 2px black;
+    border: solid 1px rgb(221, 221, 221);
+    background-color: #000000;
 }
 
 img.thumbnail {
@@ -27,6 +28,28 @@ footer i {
 
 #netflix-logo {
     text-align: left;
+}
+
+#movies-container {
+    padding-left: 55px; 
+}
+
+#footer-icons i  {
+    font-size : 30px;
+    margin-right: 25px; 
+}
+
+footer > * {
+    color: #808080;
+}
+
+footer #service-code {
+    width: fit-content;
+    border: 1px solid #808080; 
+}
+
+#movies-container h1 {
+    color: white; 
 }
 
 @media screen and (max-width:768px) {
