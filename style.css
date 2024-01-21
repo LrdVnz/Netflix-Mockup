@@ -1,92 +1,77 @@
 body {
-    background-color: #141414;
+  background-color: #141414;
 }
 
-
-/* * {
-    padding: 0px; 
-    margin: 0px; 
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-
 
 a.genres-dropdown {
-    border: solid 1px rgb(221, 221, 221);
-    background-color: #000000;
+  border: solid 1px rgb(221, 221, 221);
+  background-color: #000000;
 }
 
 img.thumbnail {
-    width: 315px;
+  width: 315px;
 }
 
 div.movies-row > div.row > * {
-    padding: 0px; 
-}
-
-footer i {
-    font-size: x-large;
-    margin-right: 10px;
-}
-
-#netflix-logo {
-    text-align: left;
+  padding: 0px;
 }
 
 #movies-container {
-    padding-left: 55px; 
+  padding-left: 55px;
 }
 
-#footer-icons i  {
-    font-size : 30px;
-    margin-right: 25px; 
+#footer-icons i {
+  font-size: 30px;
+  margin-right: 25px;
+}
+
+footer {
+  margin-top: 200px;
 }
 
 footer > * {
-    color: #808080;
+  color: #808080;
 }
 
 footer #service-code {
-    width: fit-content;
-    border: 1px solid #808080; 
+  width: fit-content;
+  border: 1px solid #808080;
 }
 
 #movies-container h1 {
-    color: white; 
+  color: white;
 }
 
-@media screen and (max-width:768px) {
-    #sub-nav {
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  #sub-nav {
+    display: none;
+  }
 
-    .screen-large {
-        display: none;
-    }
-
-    #main-nav * {
-        float:right ;
-    }
-} */
-
-@media screen and (max-width:768px) {
-    #sub-nav {
-        display: none;
-    }
-
-    .screen-large {
-        display: none;
-    }
+  .screen-large {
+    display: none;
+  }
 }
-
 
 @media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 95vw !important;
+  }
+}
 
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 95vw !important;
-    }
+
+.zoom {
+    transform: scale(1.10);
+    transition: transform 0.3s linear 0s;
+    box-shadow: 1px 1px 2px #727070;
+    z-index: 1;
 }
