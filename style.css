@@ -1,12 +1,14 @@
-* {
+body {
+    background-color: #141414;
+}
+
+
+/* * {
     padding: 0px; 
     margin: 0px; 
     box-sizing: border-box;
 }
 
-body {
-    background-color: #141414;
-}
 
 a.genres-dropdown {
     border: solid 1px rgb(221, 221, 221);
@@ -55,5 +57,36 @@ footer #service-code {
 @media screen and (max-width:768px) {
     #sub-nav {
         display: none;
+    }
+
+    .screen-large {
+        display: none;
+    }
+
+    #main-nav * {
+        float:right ;
+    }
+} */
+
+@media screen and (max-width:768px) {
+    #sub-nav {
+        display: none;
+    }
+
+    .screen-large {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 95vw !important;
     }
 }
