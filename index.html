@@ -34,10 +34,10 @@
           <li class="nav item nav-link">My list</li>
         </ul>
 
-        <ul class="navbar-nav text-light ms-auto screen-large">
-          <li class="screen-large"><i class="mx-2 fa-solid fa-magnifying-glass text-light"></i></li>
-          <li class="screen-large"><span class="mx-2 text-light fw-bold"> kids </span></li>
-          <li class="screen-large"><i class="mx-2 fa-solid fa-bell text-light"></i></li>
+        <ul class="navbar-nav text-light ms-auto d-flex flex-row">
+          <li><i class="mx-2 fa-solid fa-magnifying-glass text-light"></i></li>
+          <li><span class="mx-2 text-light fw-bold"> kids </span></li>
+          <li><i class="mx-2 fa-solid fa-bell text-light"></i></li>
           <li><img src="assets/Netflix-avatar.png" class="mx-2 user-logo" alt="user_icon" width="30px"></li>
         </ul>
       </div>
@@ -59,11 +59,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
               <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
             </ul>
           </li>
         </ul>
@@ -82,7 +79,7 @@
 
   <!-- Contenuto principale : righe di contenuto che mostrano le anteprime dei film.  -->
   <div class="container-fluid movies-row" id="movies-container">
-    <h1>Trending Now</h1>
+    <h1 class="mt-5">Trending Now</h1>
     <div class="row ms-0 my-5 screen-large">
       <div class="card mb-3 col-md-2 col-6">
         <img src="assets/imgs/movies/1.png" class="card-img-top" alt="...">
@@ -134,7 +131,7 @@
         </button>
       </div>
 
-    <h1>Watch It Again</h1>
+    <h1 class="mt-5">Watch It Again</h1>
     <div class="row ms-0 my-5 screen-large">
       <div class="card mb-3 col-md-2 col-6">
         <img src="assets/imgs/movies/7.png" class="card-img-top" alt="...">
@@ -186,7 +183,7 @@
       </button>
     </div>
 
-    <h1>New Releases</h1>
+    <h1 class="mt-5">New Releases</h1>
     <div class="row ms-0 my-5 screen-large">
       <div class="card mb-3 col-md-2 col-6">
         <img src="assets/imgs/movies/13.png" class="card-img-top" alt="...">
@@ -243,7 +240,7 @@
 
   <footer class="container text-light">
     <!-- Row per le icone social -->
-    <div class="d-flex" id="footer-icons">
+    <div class="d-flex justify-content-center justify-content-lg-start" id="footer-icons">
       <i class="fa-brands fa-square-facebook "></i>
       <i class="fa-brands fa-instagram"></i>
       <i class="fa-brands fa-x-twitter"></i>
@@ -251,28 +248,28 @@
     </div>
     <!-- Row per i vari link del footer.  -->
     <div class="row my-3">
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-12 text-center text-lg-start">
         <p>Audio and Subtitles</p>
         <p>Media Center</p>
         <p>Privacy</p>
         <p>Contact Us</p>
-        <p class="p-2" id="service-code">Service Code</p>
-        <p> 1997-2019 Netflix. Inc. (i-0d00fcda2fd9c0dm)</p>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-12 text-center text-lg-start">
         <p>Audio Description</p>
         <p>Investor Relations</p>
         <p>Legal Notices</p>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-12 text-center text-lg-start">
         <p>Help Center</p>
         <p>Jobs</p>
         <p>Cookie Preferences</p>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-12 text-center text-lg-start">
         <p>Gift Cards</p>
         <p>Terms of use</p>
         <p>Corporate information</p>
+        <p class="p-2" id="service-code">Service Code</p>
+        <p> 1997-2019 Netflix. Inc. (i-0d00fcda2fd9c0dm)</p>
       </div>
     </div>
   </footer>
