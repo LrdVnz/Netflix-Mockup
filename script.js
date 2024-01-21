@@ -1,35 +1,39 @@
 /* Script per l'animazione di zoom delle cards */
 
-const cards = document.getElementsByClassName("card");
+const cards = document.querySelectorAll("#movies-container .card");
 
-for(single_card of cards){
-  single_card.addEventListener('mouseenter' , (event) => {
-    console.log(event.target);
+for (single_card of cards) {
+  single_card.addEventListener("mouseenter", (event) => {
     event.target.classList.add("zoom");
   });
 
-  single_card.addEventListener('mouseleave' , (event) => {
+  single_card.addEventListener("mouseleave", (event) => {
     event.target.classList.remove("zoom");
   });
+}
 
-} 
+/* Script per il fade-in */
 
-const rows = document.getElementsByClassName("row");
+const rows = document.querySelectorAll(".row");
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-       if (entry.isIntersecting){
-        entry.target.classList.add("scroll-show")
-       } else if (!entry.isIntersecting) {
-        entry.target.classList.remove("scroll-show")
-       }
-    })
-   },
-    {
-        threshold: 1, 
-    },
+console.log("le rows sono");
+console.log(typeof rows);
 
-    rows.forEach(row => {
-        observer.observe(row)
-    })
-)
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("scroll-show");
+      } else if (!entry.isIntersecting) {
+        entry.target.classList.remove("scroll-show");
+      }
+    });
+  },
+  {
+    threshold: 0.8,
+  }
+);
+
+rows.forEach((row) => {
+  observer.observe(row);
+});
